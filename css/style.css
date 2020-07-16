@@ -1,0 +1,163 @@
+/* 
+  1- common style 
+  2- General Styles 
+  3- sections 
+  - 3.0 Header section 
+    - 3.1 home section 
+    - 3.2 about section 
+    - 3.3 protifilo section 
+    
+
+
+
+*/
+
+
+/* common */
+/*
+- container 
+- overlay 
+- opacity hover 
+- sectin header
+- section padding 
+- hover effect 1 ( left to right)
+- hover effect 2 ( top to bottom)
+*/
+
+
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+
+/* General CSS style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+ 
+    margin: auto;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.clear{
+    clear: both;
+}
+
+h1 , h2 ,h3,h4,h5,h6 {
+    font-family: montserrat ,sans-serif;
+}
+
+/* Header */
+
+.header{
+    background: gray;
+}
+
+.header .logo{
+    width: 40%;
+    float: left;
+}
+
+
+
+.header .nav{
+    width: 60%;
+    float: left;
+    list-style: none;
+}
+
+.header .nav li{
+    display: inline-block;
+
+}
+
+.header .nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 30px 10px;
+}
+
+
+/* Home section */
+
+.home{
+    height: 100vh;
+    background-image: url(../images/background/background1.webp);
+    background-size: cover;
+    position: relative;
+}
+
+.home-content{
+    position: absolute;
+    width: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.home .title {
+    color: #fff;
+    font-size: 3.1rem;
+    text-transform: uppercase;
+}
+
+.home-desc{
+    margin: 20px 0;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.home .btn{
+   min-width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.home .btn-start{
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.home .btn-learn{
+    background-color: #6195ff;
+    color: #fff;
+}
+
+/* About section */
+
+/* Price section */
+
+/* Team section */
+
+/* Price section */
+
+/* Contact section */
+
+/* Service Section */
+
+/* Blog Page */
+
+
+
