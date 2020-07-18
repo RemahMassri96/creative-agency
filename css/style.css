@@ -465,6 +465,80 @@ a{
 .offer-item:hover .offer-item-title{
     color: #fff;
 }
+
+/* service section */
+.service{
+ background-color: #f9f9f9;
+}
+
+.service-item{
+    width: 50%;
+    float: left;
+}
+
+.service-item .section-header{
+    text-align: left;
+}
+
+.service-item .section-header .line{
+    margin: 0 0 40px 0;
+}
+
+.service-item-desc{
+    padding-right: 20px;
+    color: #999;
+    line-height: 1.5;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+
+.service-list{
+    list-style: none;
+}
+
+.service-list li{
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.service-list li i {
+    border: 1px solid #6195ff;
+    color: #6195ff;
+    padding:  7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.service-item-img img{
+    width: 100%;
+}
+
+.service-bolites{
+    list-style: none;
+    text-align: center;
+}
+.service-bolites li {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    margin: 10px 5px;
+    border-radius: 50%;
+
+}
+
+.service-bolites li.active{
+    background-color: #6195ff;
+
+}
+
+.service-bolites li:hover{
+    background-color: #6195ff;
+
+}
 /* Price section */
 
 /* Team section */
