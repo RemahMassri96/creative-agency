@@ -44,29 +44,51 @@
     opacity: 0.8;
 }
 
-.ltr-effect{
+.ltr-effect ,
+ .tb-effect{
     position: relative;
 }
 
 
-.ltr-effect::after{
+.ltr-effect::after , 
+.tb-effect::after{
     position: absolute;
     content: '';
-    width: 0;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     background-color: #333;
-    transition: width 0.5s;
     z-index: -1;
+
+}
+
+
+.ltr-effect::after{
+    width: 0;
+    transition: width 0.5s;
+
+
+}
+
+
+.tb-effect::after{
+    height: 0;
+    transition: height 0.5s;
+
 
 }
 
 .ltr-effect:hover::after{
     width: 100%;
+
 }
 
+
+
+.tb-effect:hover::after{
+    height:  100%;
+}
 
 /* General CSS style */
 
@@ -582,19 +604,80 @@ a{
 
 }
 
+/* pricing section */
+
+.pricing{
+
+}
+
+.pricing-plans{
+    overflow: hidden;
+}
+
+.pricing-item{
+    width: 30%;
+    float: left;
+    padding: 40px 15px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+}
+
+.pricing-item.mg{
+    margin: 0 5%;
+}
+
+.pricing-item-text{
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #999;
+    transition: color 0.5s;
+
+}
+.pricing-item-permonth{
+    width: 130px;
+    height: 130px;
+    transition: color 0.5s;
+    padding: 20px 0;
+    margin: 20px  auto;
+    border: 2px solid #6195ff;
+    border-radius: 50%;
+}
+
+.pricing-item-permonth .dollar{
+    font-size: 50px;
+}
+
+.pricing-item-permonth .month{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.pricing-list{
+    list-style: none;
+}
+
+.pricing-list li {
+    color: #999;
+    line-height: 1.8;
+}
+
+.pricing-item-purchase{
+    background: none;
+    border:0;
+    display:  block;
+    border :2px solid #6195ff;
+    padding: 10px;
+    margin: 15px auto 0 auto;
+    color: #6195ff;
+
+}
+
+.pricing-item:hover .pricing-item-permonth{
+    color: #fff;
+}
 
 
-/* Price section */
-
-/* Team section */
-
-/* Price section */
-
-/* Contact section */
-
-/* Service Section */
-
-/* Blog Page */
-
-
-
+.pricing-item:hover .pricing-item-text{
+ color: #6195ff;
+}
